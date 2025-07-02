@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: author-portal
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    plan: free
+    branch: main
+    envVars:
+      - key: PORT
+        value: 3000
