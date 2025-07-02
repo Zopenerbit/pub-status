@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . .
 
+WORKDIR /app/backend
+
 RUN npm install
 
-CMD ["npm", "server.js"]
+CMD ["node", "server.js"]
